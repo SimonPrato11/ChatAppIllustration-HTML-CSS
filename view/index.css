@@ -1,0 +1,99 @@
+
+/* #### Text
+- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
+- Moderate Violet (chat on the left): hsl(276, 55%, 52%)
+- Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
+- Grayish Blue (placeholder text): hsl(206, 6%, 79%)
+- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
+- Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
+
+#### Gradients
+These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+- Light Magenta: hsl(293, 100%, 63%)
+- Light Violet: hsl(264, 100%, 61%)
+
+### Secondary
+- White: hsl(0, 0%, 100%)
+- Light Grayish Violet (app background): hsl(270, 20%, 96%)
+- Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
+- Very Light Magenta (radio button outline): hsl(289, 100%, 72%)
+ */
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color:hsl(300, 6%, 90%) ;
+    margin: 0;
+    padding: 0;
+}
+
+.leftAside{
+   background-color:hsl(264, 100%, 61%); 
+   width: 25vw;
+   height: 85vh;
+   border-bottom-left-radius:  150px;
+   border-bottom-right-radius: 150px;
+   display: inline-block;
+   z-index: -1;
+   opacity: 0.9;
+}
+
+.rightAside{
+    background-color:hsl(293, 100%, 63%); 
+    opacity: 0.1;
+   width: 25vw;
+   height: 85vh;
+   border-top-left-radius:  150px;
+   border-top-right-radius: 150px;
+   display: inline-block;
+   position: relative;
+   top: 15vh;
+   left: 49.5vw;
+   z-index: -1;
+   
+}
+
+/*****text area***********************/
+.text{
+    position: relative;
+    display: inline-block;
+    bottom: 190px;
+    height: 200px;
+    width: 450px;
+}
+h1{
+font-weight: 700;
+font-size: 1.9rem;
+color: hsl(271, 36%, 24%);
+}
+.msg{
+font-size: 1rem;
+font-weight: 400;
+ color:hsl(270, 7%, 64%) ;
+ line-height: 0.8em;
+}
+
+/*phone***************************/
+
+.framePhone{
+    display: inline-block;
+    position: absolute;
+    left: 23%;
+    bottom: 80px;
+    height: 75vh;
+    width: 21vw;
+    border-radius: 30px;
+    border: 10px solid white;
+    background-color: hsl(270, 20%, 96%) ;
+}
+
+.obal{
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    left: 5.5vw;
+    bottom: 1vh;
+    height: 4vh ;
+    width: 10vw ;
+    border-radius: 10px;
+    border:0;
+}
