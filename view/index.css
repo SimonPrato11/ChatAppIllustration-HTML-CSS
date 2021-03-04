@@ -28,11 +28,12 @@ body{
 
 .leftAside{
    background-color:hsl(264, 100%, 61%); 
-   width: 25vw;
-   height: 85vh;
+   width: 350px;
+   height: 570px;
    border-bottom-left-radius:  150px;
    border-bottom-right-radius: 150px;
    display: inline-block;
+   position: absolute;
    z-index: -1;
    opacity: 0.9;
 }
@@ -40,23 +41,24 @@ body{
 .rightAside{
     background-color:hsl(293, 100%, 63%); 
     opacity: 0.2;
-   width: 25vw;
-   height: 85vh;
+   width: 26vw;
+   height: 550px;
    border-top-left-radius:  150px;
    border-top-right-radius: 150px;
    display: inline-block;
-   position: relative;
-   top: 15vh;
-   left: 49.5vw;
+   position: absolute;
+   top: 16vh;
+   left: 73.8vw;
    z-index: -1;
    
 }
 
 /*****text area***********************/
 .text{
-    position: relative;
+    position: absolute;
     display: inline-block;
-    bottom: 190px;
+    left: 50vw;
+    bottom: 37vh;
     height: 200px;
     width: 480px;
 }
@@ -73,13 +75,17 @@ font-weight: 400;
  line-height: 26px;
 }
 
+.msgMobile{
+    display: none;
+}
+
 /*phone***************************/
 
 .framePhone{
     display: inline-block;
     position: absolute;
     left: 23%;
-    bottom: 80px;
+    bottom: 60px;
     height: 550px;
     width: 288px;
     border-radius: 30px;
@@ -271,3 +277,37 @@ position: absolute;
 bottom: 11px;
 right: 20px;
 }
+
+/*MEDIA QUERIES**********/
+
+@media(max-width:900px){.rightAside{
+    display:none;
+}}
+
+@media(max-width:870px){.text{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    left: 7vw;
+    top: 97vh;
+    padding-bottom: 100px;
+  /*   height: 200px;
+    width: 480px; */
+}}
+
+@media(max-width:1090px){.msgMobile{
+    display: inline;
+    font-size: 1rem;
+font-weight: 400;
+ color:hsl(270, 7%, 64%) ;
+ line-height: 26px;
+}}
+
+@media(max-width:1090px){.msg{
+    display: none;
+}}
+
+@media(max-width:1090px){.text{
+    padding-left: 50px;
+}}
+
